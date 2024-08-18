@@ -16,12 +16,12 @@ jobs:
       - name: Compile English LaTeX document
         uses: xu-cheng/latex-action@v3
         with:
-          root_file: the-globe-1614.latex
+          root_file: src/the-globe-1614.latex
 
       - name: Compile Swedish LaTeX document
         uses: xu-cheng/latex-action@v3
         with:
-          root_file: the-globe-1614-sv.latex
+          root_file: src/the-globe-1614-sv.latex
 
       - name: Create Release
         id: create_release
