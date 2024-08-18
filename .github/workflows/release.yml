@@ -27,3 +27,21 @@ jobs:
           path: |
             the-globe-1614.pdf
             the-globe-1614-sv.pdf
+  release:
+    needs: build_latex
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Download PDF files
+        uses: actions/download-artifact@v3
+        with:
+          name: PDFs
+
+      - name: Upload PDFs to GitHub Release
+        uses: softprops/action-gh-release@v1
+        with:
+          files: |
+            the-globe-1614.pdf
+            the-globe-1614-sv.pdf
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
