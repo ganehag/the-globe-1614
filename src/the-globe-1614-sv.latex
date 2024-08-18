@@ -1,0 +1,176 @@
+\documentclass[a4paper,10pt]{article}
+
+\usepackage{multicol}
+\usepackage[margin=0.5in]{geometry} % Justera marginaler för att få plats med mer innehåll
+\usepackage{titlesec} % För att justera titelns format
+\usepackage{array} % För bättre tabellkontroll
+\usepackage{tabularx} % För tabeller som automatiskt justeras till kolumnens bredd
+\usepackage{booktabs} % För bättre tabellinjer
+
+% Minska titlens storlek och utrymme runt den
+\titleformat{\title}{\normalfont\small\bfseries}{\thesection}{1em}{}
+\titlespacing*{\title}{0pt}{0pt}{0pt}
+
+% Justera avsnittstitelns storlek
+\titleformat{\section}{\normalfont\large\bfseries}{\thesection}{1em}{}
+
+\setlength{\parindent}{0pt} % Ta bort indrag för stycken
+\setlength{\columnsep}{1em} % Justera kolumnavstånd
+
+\pagestyle{empty}
+
+\begin{document}
+
+% Titel sektion
+\begin{center}
+    {\LARGE\bfseries The Globe: 1614} \\[0.5ex]
+    {\small Skapat av Ganehag (2024)} \\[1.5ex]
+\end{center}
+
+% Layout med tre kolumner för innehållet
+\begin{multicols}{2}
+
+\section*{Introduktion}
+Året är 1614. The Globe Theatre har nyligen återuppbyggts efter den förödande branden. Men en allvarlig situation har uppstått: Richard Burbage och resten av huvudensemblen har plötsligt blivit sjuka. Det faller på dig, skådespelarna i andra och tredje rang, att framföra matinéföreställningen av vad som kan vara den viktigaste pjäsen i historien. Det finns bara ett stort problem – Shakespeare har varit på fyllan i fyra månader, och manuset är ingenstans att hitta. Du måste improvisera hela föreställningen. Använd vilka resurser du än kan få tag på, dra in folk från gatan för att agera om det behövs, och om det kommer till det, överväg till och med den skandalösa handlingen att låta kvinnor spela rollerna. Föreställningen måste fortsätta, till varje pris.
+
+\section*{Titel och undertitel}
+Ditt första uppdrag är att skapa en titel och en undertitel för pjäsen. Kasta två sexsidiga tärningar (T6) för att generera titeln och ytterligare två T6 för undertiteln genom att kombinera ord från följande listor:
+
+\begin{center}
+\textbf{Titel}
+\vspace{0.25em}
+\end{center}
+
+\begin{tabularx}{\columnwidth}{c|X|X}
+\textbf{T6} & \textbf{Första ord} & \textbf{Andra ord} \\
+\hline\hline
+1 & Tragedi & Lycka \\
+\hline
+2 & Storm & Skuggor \\
+\hline
+3 & Handelsman & Natt \\
+\hline
+4 & Monark & Krona \\
+\hline
+5 & Dröm & Exil \\
+\hline
+6 & Orm & Förräderi \\
+\end{tabularx}
+
+\vspace{1em}
+
+\begin{center}
+\textbf{Undertitel}
+\vspace{0.25em}
+\end{center}
+
+\begin{tabularx}{\columnwidth}{c|X|X}
+\textbf{T6} & \textbf{Första del} & \textbf{Andra del} \\
+\hline\hline
+1 & En berättelse om... & Förräderi och hämnd \\
+\hline
+2 & En historia om... & Kärlek och förlust \\
+\hline
+3 & En krönika om... & Makt och girighet \\
+\hline
+4 & En legend om... & Ära och vanära \\
+\hline
+5 & En tragedi om... & Mörker och ljus \\
+\hline
+6 & En saga om... & Livets bräcklighet \\
+\end{tabularx}
+
+\vspace{1em}
+
+Exempel: Om du kastar en 3:a och en 5:a för titeln, kan du få "Handelsman i exil." Om du kastar en 2:a och en 4:a för undertiteln, kan det bli "En historia om ära och vanära."
+
+%
+% Karaktärsskapande
+%
+
+\section*{Karaktärsskapande}
+Kasta eller välj tre sexsidiga tärningar (T6) för egenskap, roll och dold agenda:
+
+\begin{center}
+\textbf{Egenskap och Roll}
+\vspace{0.25em}
+\end{center}
+
+\begin{tabularx}{\columnwidth}{c|X|c|X}
+\textbf{T6} & \textbf{Egenskap} & \textbf{T6} & \textbf{Roll} \\
+\hline\hline
+1 & Orolig & 1 & Skådespelare \\
+\hline
+2 & Övermodig & 2 & Bonde \\
+\hline
+3 & Cynisk & 3 & Scenarbetare \\
+\hline
+4 & Dramatisk & 4 & Gatukonstnär \\
+\hline
+5 & Ambitiös & 5 & Handelsman \\
+\hline
+6 & Karismatisk & 6 & Krogarbetare \\
+\end{tabularx}
+
+\vspace{1em}
+
+\begin{center}
+\textbf{Agenda}
+\vspace{0.25em}
+\end{center}
+
+\begin{tabularx}{\columnwidth}{c|X}
+\textbf{T6} & \textbf{Agenda} \\
+\hline\hline
+1 & Sabotera pjäsen \\
+\hline
+2 & Stjäl strålkastarljuset \\
+\hline
+3 & Skydda äran hos... \\
+\hline
+4 & Avslöja skandalen om... \\
+\hline
+5 & Sök hämnd för... \\
+\hline
+6 & Jag är en liten tjuv, kort och tjock \\
+\end{tabularx}
+
+\vspace{1em}
+
+Exempel: Kasta en 2:a, 5:a och 3:a för att bli en "Övermodig Handelsman" med en hemlig uppgift att "skydda äran hos någon."
+
+Ge din karaktär ett namn, och om du vill, hitta på en kort och rolig bakgrundshistoria.
+
+
+%
+% Regler
+%
+
+\section*{Regler}
+En spelledare (SL) leder spelet, och upp till sex spelare rekommenderas.
+
+Spelet spelas med sexsidiga tärningar (T6). Varje utmanande handling kräver dom av tärningsgudarna. För att lösa en utmaning:
+
+\begin{enumerate}
+   \item Kasta en T6 för ren tur. Kasta ytterligare en T6 om din karaktär har relevant kunskap, bedömd av spelledaren. Kasta ännu en T6 om spelaren i detalj kan förklara och/eller utföra den handling de försöker åstadkomma.
+   \item Välj den högsta tärningsrullen, där 1 innebär total misslyckande och 6 representerar fullständig framgång, med allt däremellan som delvisa resultat.
+   \item Spelledaren berättar resultatet baserat på tärningsrullen.
+\end{enumerate}
+
+\section*{Akterna}
+En pjäs är uppdelad i fem akter: "Introduktionen" sätter upp historien och konflikten, "Stigande Handling" bygger upp spänningen, "Klimax" ger vändpunkten, "Fallande Handling" hanterar konsekvenserna, och "Avslutningen" löser upp handlingen och avslöjar huvudpersonens öde, utan nämnvärda pauser eftersom en akt flyter sömlöst in i nästa.
+
+Dålig prestation på scenen gör bara den redan stökiga publiken ännu stökigare.
+
+\section*{Publiken}
+Ah, teatern—en scen är ingenting utan sin publik, alltid ivrig att håna och utmana skådespelarna.
+
+Publikens humör mäts på en skala från -5 till +5. Varje framgång eller misslyckande på scenen flyttar nålen åt ena eller andra hållet. Men var på din vakt, en glad publik kan vara lika oförutsägbar som en arg.
+
+\section*{Finalen}
+
+Spelet slutar när den sista scenen är spelad och publikens humör är fastställt. Spelledaren avgör ditt öde—applåder eller burop.
+
+\end{multicols}
+
+\end{document}

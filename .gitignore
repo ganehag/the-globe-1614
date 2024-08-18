@@ -1,0 +1,29 @@
+# Ignore compiled PDF files in the src directory
+src/*.pdf
+
+# Ignore LaTeX intermediate files in the src directory
+src/*.aux
+src/*.log
+src/*.out
+src/*.toc
+src/*.synctex.gz
+src/*.fdb_latexmk
+src/*.fls
+src/*.bbl
+src/*.blg
+src/*.nav
+src/*.snm
+src/*.vrb
+src/*.xdv
+
+# Editors/IDEs specific files
+*.swp
+*.swo
+*.bak
+*~
+._*
+*.tmp
+*.temp
+*~
+Thumbs.db
+.DS_Store

@@ -1,0 +1,175 @@
+\documentclass[a4paper,10pt]{article}
+
+\usepackage{multicol}
+\usepackage[margin=0.5in]{geometry} % Adjust margins to fit more content
+\usepackage{titlesec} % To adjust title format
+\usepackage{array} % For better table control
+\usepackage{tabularx} % For tables that automatically adjust to the column width
+\usepackage{booktabs} % For better table rules (lines)
+
+% Reduce title size and space around it
+\titleformat{\title}{\normalfont\small\bfseries}{\thesection}{1em}{}
+\titlespacing*{\title}{0pt}{0pt}{0pt}
+
+% Adjust the section title font size
+\titleformat{\section}{\normalfont\large\bfseries}{\thesection}{1em}{}
+
+\setlength{\parindent}{0pt} % Remove paragraph indents
+\setlength{\columnsep}{1em} % Adjust column separation
+
+\setlength{\columnsep}{1em} % Adjust column separation
+
+\pagestyle{empty}
+
+\begin{document}
+
+% Title section
+\begin{center}
+    {\LARGE\bfseries The Globe: 1614} \\[0.5ex]
+    {\small Created by Ganehag (2024)} \\[1.5ex]
+\end{center}
+
+% Three-column layout for the content
+\begin{multicols}{2}
+\section*{Introduction}
+The year is 1614. The Globe Theatre has been newly rebuilt after the devastating fire. However, a dire situation has arisen: Richard Burbage and the rest of the principal troupe have suddenly fallen ill. It falls to you, the second and third-rate actors, to perform the matinee of what might be the most crucial play in history. There's just one major problem—Shakespeare has been on a four-month bender, and the script is nowhere to be found. You'll need to improvise the entire performance. Use whatever resources you can muster, pull in people from the streets to act if necessary, and if it comes to it, even consider the scandalous act of casting women in the roles. The show must go on, no matter what.
+
+\section*{Title and Subtitle}
+Your first task is to create a title and subtitle for the play. Roll two six-sided dice (D6) to generate the title and another two D6 for the subtitle by combining words from the following lists:
+
+\begin{center}
+\textbf{Title}
+\vspace{0.25em}
+\end{center}
+
+\begin{tabularx}{\columnwidth}{c|X|X}
+\textbf{D6} & \textbf{First Word} & \textbf{Second Word} \\
+\hline\hline
+1 & Tragedy & Fortune \\
+\hline
+2 & Tempest & Shadows \\
+\hline
+3 & Merchant & Night \\
+\hline
+4 & Monarch & Crown \\
+\hline
+5 & Dream & Exile \\
+\hline
+6 & Serpent & Treachery \\
+\end{tabularx}
+
+\vspace{1em}
+
+\begin{center}
+\textbf{Subtitle}
+\vspace{0.25em}
+\end{center}
+
+\begin{tabularx}{\columnwidth}{c|X|X}
+\textbf{D6} & \textbf{First Part} & \textbf{Second Part} \\
+\hline\hline
+1 & A tale of... & Betrayal and Revenge \\
+\hline
+2 & A story of... & Love and Loss \\
+\hline
+3 & A chronicle of... & Power and Greed \\
+\hline
+4 & A legend of... & Honor and Dishonor \\
+\hline
+5 & A tragedy of... & Darkness and Light \\
+\hline
+6 & A saga of... & The fragility of life \\
+\end{tabularx}
+
+\vspace{1em}
+
+For example, if you roll a 3 and a 5 for the title, you could have "Merchant in Exile." If you roll a 2 and a 4 for the subtitle, it could be "A story of Honor and Dishonor."
+
+%
+% Character
+%
+
+\section*{Character Creation}
+Roll or choose three six-sided dice (D6) for trait, role, and hidden agenda:
+
+\begin{center}
+\textbf{Trait and Role}
+\vspace{0.25em}
+\end{center}
+
+\begin{tabularx}{\columnwidth}{c|X|c|X}
+\textbf{D6} & \textbf{Trait} & \textbf{D6} & \textbf{Role} \\
+\hline\hline
+1 & Anxious & 1 & Actor \\
+\hline
+2 & Overconfident & 2 & Peasant \\
+\hline
+3 & Cynical & 3 & Stagehand \\
+\hline
+4 & Dramatic & 4 & Street Performer \\
+\hline
+5 & Ambitious & 5 & Merchant \\
+\hline
+6 & Charismatic & 6 & Tavern Worker \\
+\end{tabularx}
+
+\vspace{1em}
+
+\begin{center}
+\textbf{Agenda}
+\vspace{0.25em}
+\end{center}
+
+\begin{tabularx}{\columnwidth}{c|X}
+\textbf{D6} & \textbf{Agenda} \\
+\hline\hline
+1 & Sabotage the play \\
+\hline
+2 & Steal the spotlight \\
+\hline
+3 & Protect the honor of... \\
+\hline
+4 & Expose the scandal of... \\
+\hline
+5 & Seek revenge for... \\
+\hline
+6 & I’m a little thief, short and stout \\
+\end{tabularx}
+
+\vspace{1em}
+
+Example: Roll a 2, 5, and 3 to be an "Overconfident Merchant" with a secret mission to "protect the honor of someone".
+
+Name your character, and if you like, invent a brief, amusing backstory.
+
+
+%
+% Rules
+%
+
+\section*{The Rules}
+One Game Master (GM) leads the game, with up to six players recommended. The game is played using six-sided dice (D6). Any challenging action requires judgement by the dice-lords. To resolve a challenge:
+
+\begin{enumerate}
+   \item Roll one D6 for pure luck. Roll one additional D6 if you character has relevant knowledge, judged by the Game Master. Roll yet one additional D6 if the player in detail can explain and or perform the action they are trying to achieve.
+   \item Choose the highest roll, where 1 signifies total failure and 6 represents complete success, with everything else falling somewhere in between.
+   \item The GM narrates the outcome based on the roll.
+\end{enumerate}
+
+\section*{The Acts}
+A play is divided into five acts: The "Introduction" sets up the story and conflict, the "Rising Action" builds tension, the "Climax" delivers the turning point, the "Falling Action" deals with the aftermath, and the "Conclusion" resolves the plot and reveals the protagonist's fate, with little to no pause as one act flows seamlessly into the next.
+
+Poor performance on stage only makes the already rowdy crowd even more unruly.
+
+\section*{The Audience}
+Ah, the theater—a stage is nothing without its audience, ever eager to banter and challenge the performers.
+
+The mood of the audience is tracked on a sliding scale from -5 to +5. Each success or failure on stage shifts the needle one way or the other. But beware, a delighted crowd can be just as unpredictable as an angry one.
+
+\section*{Final Bow}
+
+The game ends when the final scene is played and the audience’s mood is set. The Game Master decides your fate—applause or boos.
+
+\end{multicols}
+
+\end{document}

@@ -1,0 +1,29 @@
+name: Build LaTeX documents
+
+on: [push]
+
+jobs:
+  build_latex:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Set up Git repository
+        uses: actions/checkout@v4
+
+      - name: Compile English LaTeX document
+        uses: xu-cheng/latex-action@v3
+        with:
+          root_file: src/the-globe-1614.tex
+
+      - name: Compile Swedish LaTeX document
+        uses: xu-cheng/latex-action@v3
+        with:
+          root_file: src/the-globe-1614-sv.tex
+
+      - name: Upload PDF files
+        uses: actions/upload-artifact@v3
+        with:
+          name: PDFs
+          path: |
+            src/the-globe-1614.pdf
+            src/the-globe-1614-sv.pdf
