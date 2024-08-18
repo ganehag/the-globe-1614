@@ -13,12 +13,12 @@ jobs:
       - name: Compile English LaTeX document
         uses: xu-cheng/latex-action@v3
         with:
-          root_file: src/the-globe-1614.tex
+          root_file: src/the-globe-1614.latex
 
       - name: Compile Swedish LaTeX document
         uses: xu-cheng/latex-action@v3
         with:
-          root_file: src/the-globe-1614-sv.tex
+          root_file: src/the-globe-1614-sv.latex
 
       - name: Upload PDF files
         uses: actions/upload-artifact@v3
