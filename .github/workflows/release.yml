@@ -25,5 +25,5 @@ jobs:
         with:
           name: PDFs
           path: |
-            src/the-globe-1614.pdf
-            src/the-globe-1614-sv.pdf
+            the-globe-1614.pdf
+            the-globe-1614-sv.pdf
