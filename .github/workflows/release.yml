@@ -1,47 +1,51 @@
-name: Build LaTeX documents
+name: Build and Release PDFs
 
-on: [push]
+on:
+  push:
+    tags:
+      - 'v*.*.*'  # Trigger on version tags like v1.0.0
 
 jobs:
   build_latex:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Set up Git repository
+      - name: Checkout repository
         uses: actions/checkout@v4
 
       - name: Compile English LaTeX document
         uses: xu-cheng/latex-action@v3
         with:
-          root_file: src/the-globe-1614.latex
+          root_file: the-globe-1614.tex
 
       - name: Compile Swedish LaTeX document
         uses: xu-cheng/latex-action@v3
         with:
-          root_file: src/the-globe-1614-sv.latex
+          root_file: the-globe-1614-sv.tex
 
-      - name: Upload PDF files
-        uses: actions/upload-artifact@v3
-        with:
-          name: PDFs
-          path: |
-            the-globe-1614.pdf
-            the-globe-1614-sv.pdf
-  release:
-    needs: build_latex
-    runs-on: ubuntu-latest
-
-    steps:
-      - name: Download PDF files
-        uses: actions/download-artifact@v3
-        with:
-          name: PDFs
-
-      - name: Upload PDFs to GitHub Release
-        uses: softprops/action-gh-release@v1
-        with:
-          files: |
-            the-globe-1614.pdf
-            the-globe-1614-sv.pdf
+      - name: Create Release
+        id: create_release
+        uses: actions/create-release@v1
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          tag_name: ${{ github.ref_name }}
+          release_name: Release ${{ github.ref_name }}
+          draft: false
+          prerelease: false
+
+      - name: Upload PDF files to Release
+        uses: actions/upload-release-asset@v1
+        with:
+          upload_url: ${{ steps.create_release.outputs.upload_url }}
+          asset_path: the-globe-1614.pdf
+          asset_name: the-globe-1614.pdf
+          asset_content_type: application/pdf
+
+      - name: Upload Swedish PDF to Release
+        uses: actions/upload-release-asset@v1
+        with:
+          upload_url: ${{ steps.create_release.outputs.upload_url }}
+          asset_path: the-globe-1614-sv.pdf
+          asset_name: the-globe-1614-sv.pdf
+          asset_content_type: application/pdf
